@@ -15,6 +15,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .inner-page {
   color: #000000;
 
@@ -57,7 +63,15 @@ a {
   overflow: hidden;
 }
 
+.main-header {
+  margin-bottom: 75px;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -65,8 +79,34 @@ a {
   background-color: #000000;
 }
 
+.main-header-logo {
+  order: 2;
+  width: 371px;
+  height: 155px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation,
 .user-navigation {
+  list-style: none;
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -82,11 +122,29 @@ a {
   background-color: #242424;
 }
 
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .feature-item {
+  width: 300px;
   text-align: center;
 }
 
@@ -96,6 +154,11 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: #000000;
 
   background-color: #f8f5f2;
@@ -109,6 +172,10 @@ a {
   line-height: 42px;
 }
 
+.news {
+  width: 380px;
+}
+
 .news-list {
   list-style: none;
 }
@@ -117,9 +184,21 @@ a {
   text-transform: none;
 }
 
+.gallery {
+  width: 300px;
+}
+
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .appointment-item input {
@@ -284,12 +363,24 @@ a {
 
 
 .main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
   color: #ffffff;
 
   background-color: #212121;
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -303,6 +394,7 @@ a {
 }
 
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 
@@ -315,6 +407,9 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
   text-align: center;
 }
 
