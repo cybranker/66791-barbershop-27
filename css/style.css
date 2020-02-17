@@ -67,6 +67,12 @@ a {
   margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+
+  background-color: #000000;
+}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -79,10 +85,22 @@ a {
   background-color: #000000;
 }
 
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .main-header-logo {
   order: 2;
   width: 371px;
   height: 155px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -128,6 +146,10 @@ a {
   padding: 0;
 
   list-style: none;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .features {
@@ -213,11 +235,18 @@ a {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
 
@@ -232,6 +261,15 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
 }
 
 .filter fieldset {
@@ -259,13 +297,29 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -299,6 +353,9 @@ a {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -328,6 +385,10 @@ a {
   background-color: #ffffff;
 }
 
+.product-photos {
+  width: 460px;
+}
+
 .product-photo-preview {
   list-style: none;
 }
@@ -352,6 +413,10 @@ a {
   background-color: #e5e5e5;
 }
 
+.product-info {
+  width: 390px;
+}
+
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
@@ -360,7 +425,6 @@ a {
 .product-info ul {
   list-style: none;
 }
-
 
 .main-footer {
   margin-top: 65px;
@@ -371,6 +435,10 @@ a {
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .main-footer .container {
